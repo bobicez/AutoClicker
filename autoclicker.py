@@ -58,7 +58,7 @@ class Autoclicker:
 
     def start(self):
         while True:
-            print(threading.active_count())
+            print('raw dog',threading.active_count())
             time.sleep(random.uniform(self.clickMinTime, self._clickMaxTime))
             self.doubleClick()
 

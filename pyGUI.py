@@ -25,6 +25,8 @@ if __name__ == '__main__':
     print('asshole',threading.active_count())
     ac = Autoclicker()
     ac_thread = threading.Thread(target=ac.start)
+    ac_thread.start()
+
     print('asshoe')
 
     dpg.create_viewport(title='Custom Title', width=600, height=600)
